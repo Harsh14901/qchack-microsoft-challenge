@@ -20,6 +20,8 @@ namespace QCHack.Task2 {
     //
     operation Task2_ValidTriangle (inputs : Qubit[], output : Qubit) : Unit is Adj+Ctl {
         // ...
+        CCNOT(inputs[0], inputs[1], output);
+        CCNOT(inputs[1], inputs[2], output);
     }
 }
 
